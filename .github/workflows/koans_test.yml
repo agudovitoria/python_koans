@@ -1,0 +1,19 @@
+name: koans test
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Check python 2.7 koans
+      run:  |
+        cd python2
+        python contemplate_koans.py
+      
+      run:  |
+        cd ../python3
+        python3 contemplate_koans.py
