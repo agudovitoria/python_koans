@@ -3,6 +3,8 @@
 
 from runner.koan import *
 
+from python2.runner.koan import Koan
+
 
 class AboutAsserts(Koan):
 
